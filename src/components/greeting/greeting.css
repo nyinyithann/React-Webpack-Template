@@ -1,0 +1,33 @@
+.greetingContainer{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3 {
+    align-self: center;
+    font-size: 2em;
+    color: forestgreen;
+}
+
+.greetingHeader{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+img {
+    width: 4em;
+    height: 4em;
+    display: inline;
+}
+
+.wish{
+    align-self: center;
+    font-size: 1.5em;
+    color: brown;
+}
