@@ -21,7 +21,7 @@
 
 ### Installation
 
-- `git clone`
+- `git clone https://github.com/nyinyithann/react-webpack-template.git`
 - `cd react-webpack-template`
 - `yarn install`
 - `yarn start`
