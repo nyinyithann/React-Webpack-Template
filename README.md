@@ -17,7 +17,9 @@
 - `yarn global add install-peerdeps`
 - `npx install-peerdeps --dev eslint-config-airbnb`
 - `yarn add webpack-bundle-analyzer -D`
-- `yarn add webpack-dashboard -D` <br/>
+- `yarn add webpack-dashboard -D`
+- `yarn add eslint-plugin-react-hooks -D` 
+<br/>
 
 ### Installation
 

@@ -5,6 +5,7 @@ import styles from './greeting.css';
 import dev from '../../assets/images/developer.png';
 
 function Greeting({ name, times }) {
+  React.useEffect(() => { }, []);
   return (
     <div className={styles.greetingContainer}>
       <div className={styles.greetingHeader}>
