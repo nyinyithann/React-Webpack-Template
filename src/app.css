@@ -9,7 +9,7 @@
 :root {
     box-sizing: border-box;
     font-size: 14px;
-    font-family: "Prociono";
+    font-family: "Prociono", sans-serif;
     background-color: whitesmoke;
 }
 
