@@ -16,6 +16,18 @@ module.exports = {
     hot: true,
     open: true,
     port: 8080,
+    proxy: {
+      '/fetch': {
+        target: {
+          host: 'localhost',
+          protocol: 'http:',
+          port: 5000,
+        },
+        pathRewrite: {
+          '^/fetch': '',
+        },
+      },
+    },
   },
   devtool: 'eval-source-map',
 };
