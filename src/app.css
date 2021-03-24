@@ -6,26 +6,25 @@
 }
 
 :root {
-    font-size: calc(1vw + 0.5em);
-    box-sizing: border-box;    
+    font-size: calc(1vw + 0.6em);
+    box-sizing: border-box;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 50em) {
     :root {
-        font-size: 16px;
-        box-sizing: border-box;        
+        font-size: 1.125em;
     }
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;    
-    margin: 0;
-    padding: 0;
-    font-family: "Prociono", sans-serif;
+    box-sizing: inherit;
 }
 
-.appContainer {
-    padding: 0px 5px 0px 5px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Prociono",
+        sans-serif;
 }
