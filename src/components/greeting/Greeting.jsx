@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Vec } from 'xpando';
-import styles from './greeting.css';
+import styles from './Greeting.module.scss';
 import dev from '../../assets/images/developer.png';
 
 function Greeting({ name, times }) {

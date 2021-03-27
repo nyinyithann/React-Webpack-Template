@@ -11,8 +11,9 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, '..', './dist'),
+    contentBase: path.resolve(__dirname, '..', './src/dist'),
     watchContentBase: true,
+    quiet: false,
     hot: true,
     open: true,
     host: '0.0.0.0',

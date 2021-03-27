@@ -1,6 +1,7 @@
-# Basic React Project Template with webpack, babel, and eslint
+# React Project Template with webpack, babel, and eslint
 
 ### Install necessary packages
+
 - `mkdir react-webpack-template`
 - `cd react-webpack-template`
 - `yarn init`
@@ -18,8 +19,23 @@
 - `npx install-peerdeps --dev eslint-config-airbnb`
 - `yarn add webpack-bundle-analyzer -D`
 - `yarn add webpack-dashboard -D`
-- `yarn add eslint-plugin-react-hooks -D` 
-<br/>
+- `yarn add eslint-plugin-react-hooks -D`
+- `yarn add sass-loader node-sass -D`
+- `yarn add styled-components`
+- `yarn add classnames`
+- `yarn add stylelint -D`
+- `yarn add stylelint-scss -D`
+  <br/>
+
+### Notes
+
+CSS or SASS/SCSS can be used in plain or module form.
+
+- \*.css for global style
+- \*.module.css for local style
+- \*.scss for global style
+- \*.module.scss for local style
+- styled components can alos be used. It's already in dependency list.
 
 ### Installation
 
@@ -29,9 +45,8 @@
 - `yarn start`
 - visit http://localhost:8080
   <br/>
-- other commands   
-    - `yarn start:dashboard` - To run and launch the app in the default browser and show webpack dashboard in terminal
-    - `yarn build` - To build the app
-    - `yarn lint` - To run eslint
-    - `yarn build:analyze` - To analyze the app 
-
+- other commands
+  - `yarn start:dashboard` - To run and launch the app in the default browser and show webpack dashboard in terminal
+  - `yarn build` - To build the app
+  - `yarn lint` - To run eslint
+  - `yarn build:analyze` - To analyze the app

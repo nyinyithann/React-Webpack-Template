@@ -20,8 +20,12 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "html-webpack-plugin": "^5.3.0",
+    "node-sass": "^5.0.0",
     "react-hot-loader": "^4.13.0",
+    "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
+    "stylelint": "^13.12.0",
+    "stylelint-scss": "^3.19.0",
     "webpack": "^5.24.3",
     "webpack-bundle-analyzer": "^4.4.0",
     "webpack-cli": "^4.5.0",
@@ -30,6 +34,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -41,9 +46,10 @@
   },
   "scripts": {
     "lint": "eslint src/*.{js,jsx} src/**/*.{js,jsx}",
-    "build": "yarn lint & webpack --config webpack-config/webpack.config.js --env env=prod",
+    "stylelint": "stylelint '**/*.scss'",
+    "build": "yarn lint & webpack --config config/webpack.config.js --env env=prod",
     "build:analyze": "yarn build -- --env addon=bundleanalyze",
-    "start:dashboard": "yarn lint --fix & webpack-dashboard -- webpack serve --config webpack-config/webpack.config.js --env env=dev addon=dashboard",
-    "start": "yarn lint --fix & webpack serve --config webpack-config/webpack.config.js --env env=dev"
+    "start:dashboard": "yarn lint --fix & webpack-dashboard -- webpack serve --config config/webpack.config.js --env env=dev addon=dashboard",
+    "start": "yarn lint --fix & webpack serve --config config/webpack.config.js --env env=dev"
   }
 }
