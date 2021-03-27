@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Vec } from 'xpando';
-import styles from './Greeting.module.scss';
+import styles from './style.module.scss';
 import dev from '../../assets/images/developer.png';
+import DismissibleAlert from '../alert/index';
 
 function Greeting({ name, times }) {
   return (
@@ -13,7 +14,12 @@ function Greeting({ name, times }) {
         <img src={dev} alt="dev" />
       </div>
       <div className={styles.wish}>
-        {Vec.init(times, (idx) => <div key={idx}>Dream Big. Sparkle More. Shine Bright</div>)}
+        {Vec.init(times, (idx) => (
+          <div key={idx}>Dream Big. Sparkle More. Shine Bright</div>
+        ))}
+      </div>
+      <div className={styles.alertContainer}>
+        <DismissibleAlert />
       </div>
     </div>
   );

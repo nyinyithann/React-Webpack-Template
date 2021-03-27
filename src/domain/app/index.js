@@ -1,6 +1,6 @@
 import React from 'react';
-import Greeting from './components/greeting/Greeting';
-import styles from './app.css';
+import Greeting from '../../components/greeting';
+import styles from './style.module.scss';
 
 function App() {
   return (

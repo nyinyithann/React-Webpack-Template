@@ -1,4 +1,4 @@
-# React Project Template with webpack, babel, and eslint
+# React Project Template with webpack, bootstrap, react-router, and axios
 
 ### Install necessary packages
 
@@ -25,6 +25,9 @@
 - `yarn add classnames`
 - `yarn add stylelint -D`
 - `yarn add stylelint-scss -D`
+- `yarn add axios`
+- `yarn add react-router`
+- `yarn add react-bootstrap bootstrap`
   <br/>
 
 ### Notes

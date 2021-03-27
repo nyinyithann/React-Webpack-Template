@@ -1,13 +1,15 @@
+@import "./custom";
+
 @font-face {
     font-family: "Prociono";
-    src: url('assets/fonts/Prociono.woff') format('woff');
+    src: url('../assets/fonts/Prociono.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 
 :root {
     font-size: calc(1vw + 0.6em);
-    box-sizing: border-box;    
+    box-sizing: border-box;        
 }
 
 @media screen and (min-width: 50em) {
@@ -28,3 +30,4 @@ body {
     font-family: "Prociono",
         sans-serif;
 }
+
