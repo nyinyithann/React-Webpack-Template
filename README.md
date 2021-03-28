@@ -28,6 +28,7 @@
 - `yarn add axios`
 - `yarn add react-router`
 - `yarn add react-bootstrap bootstrap`
+- `yarn add copy-webpack-plugin -D`
   <br/>
 
 ### Notes

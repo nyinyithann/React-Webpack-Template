@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
-import styles from './style.module.scss';
 import cs from 'classnames';
+import styles from './style.module.scss';
 
 function DismissibleAlert() {
   const [show, setShow] = useState(false);

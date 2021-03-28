@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.js'),
@@ -101,7 +102,20 @@ module.exports = {
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
       title: 'Basic React Template with Webpack',
-      template: path.resolve(__dirname, '..', './src/index.html'),
+      favicon: path.resolve(__dirname, '..', './public/favicon.ico'),
+      template: path.resolve(__dirname, '..', './public/index.html'),
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, '..', './public/manifest.json'),
+          to: path.resolve(__dirname, '..', './dist/manifest.json'),
+        },
+        {
+          from: path.resolve(__dirname, '..', './public/normalize.css'),
+          to: path.resolve(__dirname, '..', './dist/normalize.css'),
+        },
+      ],
     }),
   ],
 };
