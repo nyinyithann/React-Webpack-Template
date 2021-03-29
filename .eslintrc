@@ -5,9 +5,10 @@
     "es6": true,
     "node": true
   },
-  "extends": ["airbnb"],
-  "plugins": ["react-hooks"],
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["react-hooks", "prettier"],
   "rules": {
+    "prettier/prettier": ["error"],
     "import/no-extraneous-dependencies": 0,
     "react/jsx-filename-extension": 0,
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks

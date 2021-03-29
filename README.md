@@ -29,6 +29,8 @@
 - `yarn add react-router`
 - `yarn add react-bootstrap bootstrap`
 - `yarn add copy-webpack-plugin -D`
+- 'yarn add prettier -D'
+- 'yarn add eslint-config-prettier eslint-plugin-prettier -D'
   <br/>
 
 ### Notes
