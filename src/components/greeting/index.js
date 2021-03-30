@@ -1,9 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import { Vec } from 'xpando';
-import styles from './style.module.scss';
 import dev from '../../assets/images/developer.png';
-import DismissibleAlert from '../alert/index';
+import DismissibleAlert from './alert';
+import styles from './style.module.scss';
 
 function Greeting({ name, times }) {
   return (
