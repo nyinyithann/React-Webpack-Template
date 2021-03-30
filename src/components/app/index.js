@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import TopNavbar from '../../components/navbar';
-import About from '../about';
-import Home from '../home';
+import TopNavbar from '../navbar';
+import About from '../pages/about';
+import Home from '../pages/home';
 import styles from './style.module.scss';
 
 function App() {

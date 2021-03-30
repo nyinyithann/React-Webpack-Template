@@ -1,5 +1,5 @@
 import React from 'react';
-import Greeting from '../../components/greeting';
+import Greeting from '../../greeting';
 
 function Home() {
   return <Greeting name="World!" times={3} />;
