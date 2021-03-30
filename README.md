@@ -26,11 +26,12 @@
 - `yarn add stylelint -D`
 - `yarn add stylelint-scss -D`
 - `yarn add axios`
-- `yarn add react-router`
 - `yarn add react-bootstrap bootstrap`
 - `yarn add copy-webpack-plugin -D`
 - `yarn add prettier -D`
 - `yarn add eslint-config-prettier eslint-plugin-prettier -D`
+- `yarn add react-router react-router-bootstrap`
+- `yarn add react-router-dom`
   <br/>
 
 ### Notes
@@ -49,7 +50,7 @@ CSS or SASS/SCSS can be used in plain or module form.
 - `cd react-webpack-template`
 - `yarn install`
 - `yarn start`
-- visit http://localhost:8080
+- visit http://0.0.0.0:8080
   <br/>
 - other commands
   - `yarn start:dashboard` - To run and launch the app in the default browser and show webpack dashboard in terminal

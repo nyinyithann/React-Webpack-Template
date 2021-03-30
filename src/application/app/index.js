@@ -1,11 +1,22 @@
 import React from 'react';
-import Greeting from '../../components/greeting';
+import { Route, Switch } from 'react-router-dom';
+import TopNavbar from '../../components/navbar/index';
+import About from '../about/about';
+import Home from '../home/index';
 import styles from './style.module.scss';
 
 function App() {
   return (
     <div className={styles.appContainer}>
-      <Greeting times={3} name="Developer" />
+      <TopNavbar />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+      </Switch>
     </div>
   );
 }
