@@ -32,6 +32,7 @@
 - `yarn add eslint-config-prettier eslint-plugin-prettier -D`
 - `yarn add react-router react-router-bootstrap`
 - `yarn add react-router-dom`
+- `yarn add mini-css-extract-plugin -D`
   <br/>
 
 ### Notes
