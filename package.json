@@ -59,7 +59,7 @@
   "scripts": {
     "lint": "eslint \"src/**/*.{js, jsx}\"",
     "stylelint": "stylelint '**/*.scss'",
-    "build": "yarn lint & webpack --config config/webpack.config.js --env env=prod",
+    "build": "webpack --config config/webpack.config.js --env env=prod",
     "build:analyze": "yarn build -- --env addon=bundleanalyze",
     "start:dashboard": "yarn lint --fix & webpack-dashboard -- webpack serve --config config/webpack.config.js --env env=dev addon=dashboard",
     "start": "webpack serve --config config/webpack.config.js --env env=dev"
